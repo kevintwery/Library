@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Commons | Phase 2</title>
+    <meta
+      name="description"
+      content="A warm, neighborhood-forward experience for the public library as a free third space."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">The Commons</div>
+        <div class="nav-links">
+          <a href="#experience">Experience</a>
+          <a href="#partners">Partners</a>
+          <a href="#access">Access</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Phase 2 • Repositioning the Library</p>
+          <h1>Your place. Always open. Always free.</h1>
+          <p class="hero-copy">
+            The Commons reframes the public library as a chosen destination for
+            work, learning, family life, and everyday belonging.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#experience">Explore the experience</a>
+            <a class="btn btn-secondary" href="#access">Try the digital on-ramp</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>What visitors feel</h3>
+          <ul>
+            <li>Welcomed, not watched</li>
+            <li>Comfortable enough to stay</li>
+            <li>Seen as a community asset</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Neighborhood experience</p>
+          <h2>A library that feels local and alive</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card accent-blue">
+            <h3>Live this week</h3>
+            <p>
+              Each branch surfaces event highlights, open hours, equipment availability,
+              and neighborhood-relevant programming.
+            </p>
+          </article>
+          <article class="card accent-gold">
+            <h3>Real stories</h3>
+            <p>
+              The homepage highlights actual community members working, reading,
+              parenting, and finding calm in the space.
+            </p>
+          </article>
+          <article class="card accent-green">
+            <h3>Designed for staying</h3>
+            <p>
+              Warm spaces, flexible seating, and welcoming design make the library feel
+              like a destination rather than a transaction.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="partners" class="section muted">
+        <div class="section-heading">
+          <p class="eyebrow">Trusted messengers</p>
+          <h2>Meet people where trust already exists</h2>
+        </div>
+        <div class="partner-list">
+          <div class="partner-pill">Pediatricians</div>
+          <div class="partner-pill">School counselors</div>
+          <div class="partner-pill">Social workers</div>
+          <div class="partner-pill">Food banks</div>
+          <div class="partner-pill">Community churches</div>
+        </div>
+        <p class="section-copy">
+          The message is not “free services.” It is “this is a great place to bring your
+          kids, do your work, or take a breath.”
+        </p>
+      </section>
+
+      <section id="access" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Private digital on-ramp</p>
+          <h2>A low-friction first step</h2>
+        </div>
+        <div class="access-layout">
+          <div>
+            <h3>Start privately</h3>
+            <p>
+              Visitors can access ebooks, online courses, digital tutoring, and more
+              through a library card signup experience that begins online.
+            </p>
+          </div>
+          <div class="access-panel">
+            <button class="toggle-btn" data-target="panel-one">Library card access</button>
+            <div id="panel-one" class="toggle-panel open">
+              <p>Apply online in minutes and start with privacy.</p>
+            </div>
+            <button class="toggle-btn" data-target="panel-two">Digital learning</button>
+            <div id="panel-two" class="toggle-panel">
+              <p>Borrow ebooks, join tutoring sessions, and explore job-ready resources.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
