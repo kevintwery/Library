@@ -125,6 +125,64 @@
           </div>
         </div>
       </section>
+
+      <section id="services" class="section services-section" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Community services</p>
+          <h2 id="services-title">Find free or low-cost support near you</h2>
+        </div>
+
+        <div class="service-search-panel" role="search">
+          <div class="service-controls">
+            <label class="field">
+              <span class="field-label">Search services</span>
+              <input id="searchInput" type="search" placeholder="Search by name or category" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Your zip code</span>
+              <input id="zipInput" type="text" inputmode="numeric" maxlength="5" placeholder="Enter zip code" />
+            </label>
+
+            <label class="field">
+              <span class="field-label">Maximum cost</span>
+              <select id="costFilter">
+                <option value="all">Any cost</option>
+                <option value="free">Free only</option>
+                <option value="under20">Under $20</option>
+                <option value="under50">Under $50</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Sort by</span>
+              <select id="sortSelect">
+                <option value="newest">Newest</option>
+                <option value="cost">Lowest cost</option>
+                <option value="distance">Closest distance</option>
+                <option value="name">Alphabetical</option>
+              </select>
+            </label>
+          </div>
+
+          <fieldset class="filter-group" aria-labelledby="categories-label">
+            <legend id="categories-label">Service type</legend>
+            <div id="categoryFilters" class="chip-group"></div>
+          </fieldset>
+
+          <div class="results-summary">
+            <p id="resultsSummary" aria-live="polite">Loading services…</p>
+            <p class="results-hint">Results show your selected zip code, distance, driving time, and exact cost.</p>
+          </div>
+
+          <div id="serviceGrid" class="service-grid" role="list"></div>
+
+          <div id="emptyState" class="empty-state" role="status" aria-live="polite" hidden>
+            <h3>No results found</h3>
+            <p>Try adjusting your search terms or filters to view more options.</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
